@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tarea")
-public class tarea {
+public class Tarea {
 
     //Creación de un id autoincremental
     @Id
@@ -26,14 +26,14 @@ public class tarea {
 
     //Constructores del objeto
 
-    public tarea(Integer id, String titulo, String descripcion, Estado estado) {
+    public Tarea(Integer id, String titulo, String descripcion, Estado estado) {
         this.id = id;
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.estado = estado;
     }
 
-    public tarea() {
+    public Tarea() {
     }
 
     // Getters y setters
